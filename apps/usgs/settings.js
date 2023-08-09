@@ -22,10 +22,8 @@ function popSubMenu() {
   data = getDataStreams();
 }
 function popSubMenuData(data) {
-  console.log(data);
     Object.keys(data).forEach(function(k){
       var name = data[k].description.split(" / ")[0];
-      console.log(name);
       if (!settings.keys[name]) {
         // Setting doesn't exist, so we assume it's false
         settings.keys[name] = false;

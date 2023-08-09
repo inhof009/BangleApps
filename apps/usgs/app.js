@@ -69,7 +69,7 @@ function handleButton() {
       fetchStartup();
       break;
     case 2:
-      Bangle.showLauncher();
+      Bangle.showClock();
       break;
     default:
       Bangle.buzz(50);
